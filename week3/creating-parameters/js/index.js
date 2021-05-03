@@ -53,42 +53,15 @@ $(document).ready(function() {
 
 });
 
-//const starWars = require('./jquery-2.1.1.min.js');
-//console.log(starWars);
-var starWars = [
-  {
-    "name": "Leia Organa",
-    "height": "150",
-    "mass": "49",
-    "hair_color": "brown",
-    "skin_color": "light",
-    "eye_color": "brown",
-    "birth_year": "19BBY",
-    "gender": "female",
-    "homeworld": "http://swapi.dev/api/planets/2/",
-    "films": [
-      "http://swapi.dev/api/films/1/",
-      "http://swapi.dev/api/films/2/",
-      "http://swapi.dev/api/films/3/",
-      "http://swapi.dev/api/films/6/"
-    ],
-    "species": [],
-    "vehicles": [
-      "http://swapi.dev/api/vehicles/30/"
-    ],
-    "starships": [],
-    "created": "2014-12-10T15:20:09.791000Z",
-    "edited": "2014-12-20T21:17:50.315000Z",
-    "url": "http://swapi.dev/api/people/5/"
-  }
-]
+const starWars = require('/Users/iluvmacncheese/Development/Bryan_University/FSW-113/week3/creating-parameters/json/data.json');
+console.log(starWars);
 
-var ulElem = document.createElement("ul");
+/*var ulElem = document.createElement("ul");
 ulElem.id = 'option5';
-document.body.appendChild(ulElem);/**/
+document.body.section.code.appendChild(ulElem);*/ //want to append to id:"resultList" output
 
 var dataList = document.getElementById('option5');
-for (var i =0; i < starWars.length; i++){
-  dataList.innerHTML += '<li>' + `${starWars[i].name}, ${starWars[i].height}, ${starWars[i].mass}, ${starWars[i].birth_year}` + '</li>'
+for (var i =0; i < apiList.length; i++){
+  dataList.innerHTML += '<li>' + `${apiList[i].name}, ${apiList[i].height}, ${apiList[i].mass}, ${apiList[i].birth_year}` + '</li>'
 };
-console.log(starWars);
+console.log(dataList);
