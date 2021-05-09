@@ -1,4 +1,3 @@
-/*
 //CLO1
 var students = [
     { name: "James", dob: "01/01/2000" },
